@@ -6,7 +6,7 @@
   <link href="http://jianyu-code.github.io/atom.xml" rel="self"/>
   
   <link href="http://jianyu-code.github.io/"/>
-  <updated>2021-05-04T17:58:41.600Z</updated>
+  <updated>2021-05-04T19:33:02.508Z</updated>
   <id>http://jianyu-code.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python</title>
+    <link href="http://jianyu-code.github.io/2021/05/05/python/"/>
+    <id>http://jianyu-code.github.io/2021/05/05/python/</id>
+    <published>2021-05-04T19:25:50.000Z</published>
+    <updated>2021-05-04T19:33:02.508Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Python由荷兰数学和计算机科学研究学会的Guido van Rossum 于1990 年代初设计，作为一门叫做ABC语言的替代品。 [1] </summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="http://jianyu-code.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="笔记" scheme="http://jianyu-code.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="python" scheme="http://jianyu-code.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C语言</title>
     <link href="http://jianyu-code.github.io/2021/05/04/c-yu-yan/"/>
     <id>http://jianyu-code.github.io/2021/05/04/c-yu-yan/</id>
     <published>2021-05-03T16:02:11.000Z</published>
-    <updated>2021-05-04T17:58:41.600Z</updated>
+    <updated>2021-05-04T19:33:11.296Z</updated>
     
     
       

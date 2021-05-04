@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="C语言, My Blog">
+    <meta name="keywords" content="python, My Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>C语言 | My Blog</title>
+    <title>python | My Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -261,12 +261,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/JianYu-code/image/C语言2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/JianYu-code/image/python2.jpeg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">C语言</h1>
+                    <h1 class="description center-align post-title">python</h1>
                 </div>
             </div>
         </div>
@@ -386,8 +386,8 @@
                                 <span class="chip bg-color">笔记</span>
                             </a>
                         
-                            <a href="/tags/C%E8%AF%AD%E8%A8%80/">
-                                <span class="chip bg-color">C语言</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -411,7 +411,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-05-04
+                    2021-05-05
                 </div>
                 
 
@@ -425,7 +425,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5k
+                    153
                 </div>
                 
 
@@ -447,259 +447,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>C语言是一门面向过程的、抽象化的通用程序设计语言，广泛应用于底层开发。C语言能以简易的方式编译、处理低级存储器。C语言是仅产生少量的机器语言以及不需要任何运行环境支持便能运行的高效率程序设计语言。尽管C语言提供了许多低级处理的功能，但仍然保持着跨平台的特性，以一个标准规格写出的C语言程序可在包括类似嵌入式处理器以及超级计算机等作业平台的许多计算机平台上进行编译。<br><img src="https://cdn.jsdelivr.net/gh/JianYu-code/image/C%E8%AF%AD%E8%A8%80.jpg@518w.webp"><br>                                    —————————图片来自B站：鱼C-小师妹</p>
-<h1 id="一·程序设计和C语言"><a href="#一·程序设计和C语言" class="headerlink" title="一·程序设计和C语言"></a>一·程序设计和C语言</h1><h2 id="1-1、什么是计算机程序"><a href="#1-1、什么是计算机程序" class="headerlink" title="1.1、什么是计算机程序"></a>1.1、什么是计算机程序</h2><h3 id="计算机"><a href="#计算机" class="headerlink" title="计算机"></a>计算机</h3><blockquote><p>1、计算机的每一个操作都是根据人们事先指定的指令进行的</p>
-<p>2、图灵——理论计算机（图灵机）设计者  程序运行——二进制</p>
-<p>3、冯·诺依曼——计算机奠基人   五大组成部分（CPU（运算器&amp;控制器）、输入输出设备、存储设备）</p>
-</blockquote>
-
-<h3 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h3><blockquote><p>1、一组计算机能识别和执行的指令。一个特定的指令序列用来完成一定的功能</p>
-<p>2、一个软件包含了很多程序（一个特定的功能称为程序）</p>
-</blockquote>
-
-<blockquote><p>总之，计算机的一切都是由程序来控制，离开程序，计算机将一事无成</p>
-</blockquote>
-
-<h2 id="1-2、什么是计算机语言"><a href="#1-2、什么是计算机语言" class="headerlink" title="1.2、什么是计算机语言"></a>1.2、什么是计算机语言</h2><blockquote><p><strong>1、早期——机器语言（二进制写的）</strong><br>    进制转换<br>短除法<br>十进制-&gt;其他进制</p>
-<p>例：十进制：38 得二进制：？ </p>
-<p>用38每次都除以2，并记录余数，除到最后将余数从新至旧摆列，得：100110</p>
-<p>其他进制-&gt;十进制</p>
-<p>例：1011 = 1x2的3次方+0x2的2次方+1x2的1次方+1x2的0次方，得十进制：11</p>
-<p>二进制-&gt;八进制(八进制-&gt;二进制)<br>三合一法<br>例：11010111<br>将这个数，从右至左，每取三位组成一位，被新组成的一位按照二进制计算，然后将得到的结果从新至旧摆列，11,010,111(3,2,7)得：八进制：327</p>
-<p>反之，就是将八进制的每一位分解成二进制数(三位，不够用0占)，然后从新至旧摆列3,2,7(011,010,111)，得二进制：11010111（可以将第一位的0省略）</p>
-<p>二进制-&gt;十六进制（十六进制-&gt;二进制）<br>四合一法<br>例：100111001，从左至右取四位为新一位，0001,0011,1001(1,3,9),然后将得到的几个结果从新至旧摆列，得十六进制：139</p>
-<p>反之 就是取一合四，1,3,9(0001,0011,1001)，从新至旧摆列，得二进制：100111001</p>
-<p>进制取值范围：<br>二进制：0<del>1<br>十进制：0</del>9<br>八进制：0<del>7<br>十六进制：0</del>9 &amp; A~F</p>
-<p>ASCII编码：<br>掌握a(097)<del>z(122) &amp; A(065)</del>Z(090)<br>大小写转换：大-&gt;小：A+‘32’<br>小-&gt;大：a-‘32’</p>
-<p><strong>2、早期——机器语言（二进制写的）</strong><br>    进制转换<br>短除法<br>十进制-&gt;其他进制</p>
-<p>例：十进制：38 得二进制：？ </p>
-<p>用38每次都除以2，并记录余数，除到最后将余数从新至旧摆列，得：100110</p>
-<p>其他进制-&gt;十进制</p>
-<p>例：1011 = 1x2的3次方+0x2的2次方+1x2的1次方+1x2的0次方，得十进制：11</p>
-<p>二进制-&gt;八进制(八进制-&gt;二进制)<br>三合一法<br>例：11010111<br>将这个数，从右至左，每取三位组成一位，被新组成的一位按照二进制计算，然后将得到的结果从新至旧摆列，11,010,111(3,2,7)得：八进制：327</p>
-<p>反之，就是将八进制的每一位分解成二进制数(三位，不够用0占)，然后从新至旧摆列3,2,7(011,010,111)，得二进制：11010111（可以将第一位的0省略）</p>
-<p>二进制-&gt;十六进制（十六进制-&gt;二进制）<br>四合一法<br>例：100111001，从左至右取四位为新一位，0001,0011,1001(1,3,9),然后将得到的几个结果从新至旧摆列，得十六进制：139</p>
-<p>反之 就是取一合四，1,3,9(0001,0011,1001)，从新至旧摆列，得二进制：100111001</p>
-<p>进制取值范围：<br>二进制：0<del>1<br>十进制：0</del>9<br>八进制：0<del>7<br>十六进制：0</del>9 &amp; A~F</p>
-<p>ASCII编码：<br>掌握a(097)<del>z(122) &amp; A(065)</del>Z(090)<br>大小写转换：大-&gt;小：A+‘32’<br>小-&gt;大：a-‘32’</p>
-<p><strong>3、中期——汇编语言（助记符代替某些指令，属于低级语言）</strong></p>
-<p><strong>4、后期——高级语言（接近自然语言&amp;数学语言）</strong><br>    高级语言出现了两个阶段：<br>1、结构化程序高级语言：C语言<br> 早期，适用于较小的程序设计<br>2、面向对象高级程序设计语言：C++、java…..<br> 后期，适用于大型化、系统化的程序开发</p>
-<p>计算机也不是能直接识别高级语言的，需要“翻译”，用一种称为“编译程序”的软件把用高级语言编写的程序（源程序）（文件名.c）转换为机器指令的程序（目标程序）（二进制代码），然后计算机执行机器指令程序，最后得到结果。</p>
-<p>“翻译”有两种：<br>1、解释<br> java:使用虚拟机进行解释，相对运行效率低<br>2、编译<br> C、C++语言是编译性语言，相对运行效率高</p>
-</blockquote>
-
-<h2 id="1-3、C语言的发展及特点"><a href="#1-3、C语言的发展及特点" class="headerlink" title="1.3、C语言的发展及特点"></a>1.3、C语言的发展及特点</h2><blockquote><p>1、Unix-&gt;C，Unix是ios和安卓的母本</p>
-<p>2、C语言标准：C89/C99</p>
-<p>3、C语言特点<br> ①、简洁紧凑 ，方便灵活<br> C语言一共有37个关键字，9种控制语句，程序的书写自由，主要用小写字母表示<br> C语言不直接提供输入输出语句，有关的操作语句是由库函数来实现</p>
-<p>②、运算符丰富<br>    共有34种运算符</p>
-<p>③、数据类型丰富<br> C语言提供的数据类型包括 整型、浮点型、字符型、数组类型、指针类型、结构体类型和共用体类型等；C99又扩充了复数浮点型、超长整型（long long）和布尔类型（bool）等。</p>
-<p>④、结构化控制语句<br> if … else、for、while、do….while、switch<br> C语言用函数作为程序的模块单位（C语言的基本组成单位是函数）<br> C语言是完全模块化和结构化的语言（函数=模块，模块=函数）</p>
-<p>⑤、程序设计自由度大</p>
-<p>⑥、直接访问硬件进行位操作<br> C语言既具有高级语言的功能，又具有低级语言的许多功能，可用来编写系统软件</p>
-<p>⑦、可移植性较好（相对来说）</p>
-<p>⑧、代码质量高，执行效率高</p>
-</blockquote>
-
-<h2 id="1-4-1、掌握C语言的结构"><a href="#1-4-1、掌握C语言的结构" class="headerlink" title="1.4.1、掌握C语言的结构"></a>1.4.1、掌握C语言的结构</h2><blockquote><p><strong>main必须且唯一</strong></p>
-<p><strong>结构</strong><br>①、预处理 include “stdio.h”<br>②、main()<br>③、{  //开始<br>④、语句   ;  分号作为语句结束的标志<br>⑤、}  //结束</p>
-</blockquote>
-
-<h2 id="1-4-2、重点章节掌握"><a href="#1-4-2、重点章节掌握" class="headerlink" title="1.4.2、重点章节掌握"></a>1.4.2、重点章节掌握</h2><blockquote><p><strong>一个程序是由一个或多个源程序文件组成</strong><br>一个规模较小的的程序，往往只包含一个源程序文件；而一个源程序文件只有一个函数（main函数）</p>
-<p>一个源程序文件中包含三个部分：<br>①预处理指令<br>②全局声明<br>③函数定义</p>
-<p><strong>函数是C语言的基本单位</strong></p>
-<p><strong>一个C语言程序是由一个或多个函数组成的，其中必须包含一个main函数</strong></p>
-<p><strong>函数组成</strong><br>函数的首部（头部）</p>
-<p>函数体<br>    声明部分<br>    执行部分</p>
-<p>main函数的位置任意，程序的入口</p>
-<p>分号是C语句的必要组成部分</p>
-<p>C不提供输入、输出语句，输入输出操作由库函数printf、scanf来完成</p>
-<p>程序应当包含适当注释</p>
-</blockquote>
-
-<h2 id="1-5、运行C语言的步骤"><a href="#1-5、运行C语言的步骤" class="headerlink" title="1.5、运行C语言的步骤"></a>1.5、运行C语言的步骤</h2><blockquote><p>编辑（文件名.c）（编写源程序）<br>编译（文件名.obj）<br>链接（文件名.exe）（可执行的目标文件）</p>
-</blockquote>
-
-<h2 id="1-6、程序设计的任务"><a href="#1-6、程序设计的任务" class="headerlink" title="1.6、程序设计的任务"></a>1.6、程序设计的任务</h2><blockquote><p>问题分析<br>设计算法<br>编写程序<br>对源程序进行编辑、编译和链接<br>运行程序、分析结果</p>
-</blockquote>
-
-<h1 id="二·算法"><a href="#二·算法" class="headerlink" title="二·算法"></a>二·算法</h1><h2 id="算法特性"><a href="#算法特性" class="headerlink" title="算法特性"></a>算法特性</h2><blockquote><p>有穷性<br>确定性<br>输入(0<del>+无穷)<br>输出(1</del>+无穷)<br>有效性（可行性）</p>
-</blockquote>
-
-<h2 id="算法的表示"><a href="#算法的表示" class="headerlink" title="算法的表示"></a>算法的表示</h2><blockquote><p>自然语言<br>画图</p>
-</blockquote>
-
-<h2 id="结构化程序设计的方法"><a href="#结构化程序设计的方法" class="headerlink" title="结构化程序设计的方法"></a>结构化程序设计的方法</h2><blockquote><p>自顶向下<br>逐步细化<br>模块化设计<br>结构化编码</p>
-</blockquote>
-
-<h1 id="三·顺序结构"><a href="#三·顺序结构" class="headerlink" title="三·顺序结构"></a>三·顺序结构</h1><h2 id="1、数据的表现形式和运算"><a href="#1、数据的表现形式和运算" class="headerlink" title="1、数据的表现形式和运算"></a>1、数据的表现形式和运算</h2><h3 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h3><blockquote><p><strong>常量表示形式</strong><br>1 、整型常量 一个学校招生规模 2200<br>2、实型常量 3.14 9.8  45.32=4.532e1(科学计数法）<br> 考点 e之前必须有数字 e之后为整数<br>3、字符型常量 ‘A’ ‘C’<br>4、字符串常量 “anbc”<br>5、 转义字符 \n \b \t  \bbb(八进制数表示的字符)  \xhh (十六进制表示的字符)<br>6、 字符常量的定义 #define PI 3000</p>
-<p><strong>-080  不可以作为常量，因为有0开头表示是八进制，不可以出现8</strong></p>
-<p><strong>-8e1.0 不可以作为常量，-8e后改成整数可以，-8e1可以作为常量</strong></p>
-<p><strong>-80.0e   不可以作为常量，以为e后必须有数值</strong></p>
-<p><strong>-80可以作为常量</strong></p>
-</blockquote>
-
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><blockquote><p><strong>命名的规则</strong><br>字母、数字、下划线，只能以字母和下划线开头，关键字不可以作命名使用</p>
-<p><strong>内存的存储容量的表示</strong><br>bit   Byte  kB  MB</p>
-<p><strong>整形变量  int</strong><br>C语言中  2个字节  有符号（-32767-32768） 无符号 （0-65535） C++ 4个字节<br>  短整型 short int &lt;=   int &lt;=    long int&lt;= long long(四个字节32位)  %d十进制 sizeof()<br>  无符号整型 unsigned int<br>  补码  -1<br>  原码  1 000 0000 0000 0001<br>  反码  1 111 1111 1111 1110<br>  补码  1 111 1111 1111 111 1<br>  整数在计算机中以补码形式存在    </p>
-<p><strong>字符型变量 char</strong><br>1个字节 char c=’a’  %c</p>
-<p><strong>浮点型</strong><br>4个字节表示  float  3.14f   6有效数字<br>       8个字节表示  double 3.14L     15位有效数字<br>       16个字节表示 long double   19有效数字</p>
-</blockquote>
-
-<h2 id="2、运算符表达式"><a href="#2、运算符表达式" class="headerlink" title="2、运算符表达式"></a>2、运算符表达式</h2><blockquote><p><strong>1.1基本算术运算符</strong></p>
-<ul>
-<li><ul>
-<li><ul>
-<li>/ %   a+b a-3  a*3 a/b 5%3<br>% 要求 左右两侧都是整数<br>/ 如果实数参与结果都是double 5.3/4 如果前后都是整数 结果是整数 5/2=2 5.0/2 5/2.0=2.5<br>优先级 * / % 高于加减</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p><strong>1.2 自增 自减运算符</strong><br>++ –<br>  前置  ++i   先加后用 –i<br>  后置  i++   先用后加 i–</p>
-<p> i=4;<br>  printf(“%d”,i++); 4 i=5<br>  printf(“%d,”++i); 6 i=6</p>
-<p><strong>1.3 规则</strong><br>1 、混合运算里面有float或者double 结果就是double<br> 2 、字符和整型混合运算 A+3</p>
-<p><strong>1.4 强制数据转换</strong><br> int i=4   (float) i   float x=3.14  (int)x =3<br>  printf(“%f”,(float)i);</p>
-<p><strong>1.5 赋值语句</strong><br>=   变量=表达式   int a;  a=5; 优先级最低<br>  int a,b,c;<br>  a=5;<br>  b=5;<br>  c=a+b;<br> int a,b,c; c=(a=5)+(b=5) c=b=5 c=5=6<br> 复合赋值运算  c=c+4 c+=4  -= /= %=   c-=6  c=c-6<br> 类型转换<br> int a; a=3.14;<br> float b; b=4;<br> double x;<br> float y;   y=x</p>
-<p><strong>1.6 逗号运算符</strong><br>z=(x=4,y=6)<br>1.7 pow(x,n) x的n次方  该函数在 math.h</p>
-</blockquote>
-
-<h2 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h2><blockquote><p>#include&lt;stdio.h&gt; 标准化输入输出函数库<br>getchar()  从键盘上得到一个字符<br>putchar() 向显示设备输出一个字符</p>
-<p>scanf()   格式化输入函数<br>printf()   格式化输出函数</p>
-<p>printf(“ 输出格式”, 变量列表)；<br>%d 十进制输出 %i（老式写法）<br>%ld 输出long int类型的<br>%c 输出一个字符<br>%s 输出一串字符<br>%f  输出一个实数<br>%e 指数形式输出<br>%o 输出八进制<br>%x 输出十六进制<br>%u 输出无符号数<br>int i=4； printf(“%d”,i)<br>额外修饰<br> %m d   %4d 指定输出宽度<br> %.nf 指定小数点后面输出的位数 （四舍五入）如果加-号代表从左输出<br>输出% 在格式控制符中 键入%%</p>
-<p>scanf(“格式控制”，地址列表)<br>%d 十进制输出 %i（老式写法）<br>%ld 输入long int类型的<br>%c 输出一个字符<br>%s 输出一串字符<br>%f  输出一个实数<br>%e 指数形式输出<br>%o 输出八进制<br>%x 输出十六进制<br>%u 输出无符号数<br>地址列表 &amp;变量名 当输入多个变量 用空格回车或者tab 进行分隔</p>
-<p>putchar(C) 有参函数<br>getchar()  无参函数</p>
-</blockquote>
-
-<h1 id="四·选择结构"><a href="#四·选择结构" class="headerlink" title="四·选择结构"></a>四·选择结构</h1><h2 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h2><blockquote><p>语法：<br>if(表达式)<br>    语句1;<br>else<br>    语句2;</p>
-<p>表达式：关系表达式    逻辑表达式</p>
-<p>1、关系表达式<br>    使用关系运算符连接起来的表达式<br> 关系运算符：&lt;,&lt;=,&gt;.&gt;=,==,!=<br>优先级：（&lt;,&lt;=,&gt;,&gt;=优先级相同）高于（==,!=优先级相同）；关系运算符 低于 算术运算符；关系运算符 高于赋值运算符<br>2、逻辑表达式：用逻辑运算符把多个关系表达式连接起来的表达式<br>逻辑运算符：&amp;&amp;,||,!<br>优先级：&amp;&amp;，||低于关系运算符，但 ！最高<br>短路效应：a&amp;&amp;b&amp;&amp;c，只要a为假，就不运算b，c；a||b||c，只要a为真，就不运算b，c</p>
-</blockquote>
-
-<h2 id="switch语句"><a href="#switch语句" class="headerlink" title="switch语句"></a>switch语句</h2><blockquote><p>语法：<br>switch(表达式) 表达式类型 整型（字符型）<br>{<br> case 常量1:<br> 语句1;<br> break;<br> case 常量2:<br> 语句2;<br> break;<br> default :<br> 语句~;<br> break;<br>}</p>
-<p>多个case可以共用一组执行语句<br> case 1:<br> case 2:<br> printf(“你好！”);</p>
-</blockquote>
-
-<h1 id="五·循环结构"><a href="#五·循环结构" class="headerlink" title="五·循环结构"></a>五·循环结构</h1><h2 id="三种形式"><a href="#三种形式" class="headerlink" title="三种形式"></a>三种形式</h2><h3 id="while"><a href="#while" class="headerlink" title="while"></a>while</h3><blockquote><p>语法：</p>
-<p>初值<br>while(终止条件){<br>      循环体;<br>      循环增量++;<br>}</p>
-<p>跟while的等阶变种：<br>1、初值在外<br>2、终止条件缺失<br>        while(1)      if(终止条件)   break;<br>3、增量在循环体内</p>
-</blockquote>
-
-<h3 id="do…while"><a href="#do…while" class="headerlink" title="do…while"></a>do…while</h3><blockquote><p>语法：</p>
-<p>do{<br>   循环体;<br>   循环增量++;<br>}while(终止条件)</p>
-<p>while 和 do…while的区别：<br>在不满足条件的情况下：<br>while一次都不执行<br>do….while至少执行一次</p>
-</blockquote>
-
-<h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3><blockquote><p>语法：</p>
-<p>for(初值;终止条件;增量){<br>       循环体<br>}</p>
-</blockquote>
-
-<h2 id="循环的必要条件"><a href="#循环的必要条件" class="headerlink" title="循环的必要条件"></a>循环的必要条件</h2><blockquote><p>初值，终值，增值</p>
-<p>循环体遇到：break、return、goto则跳出循环</p>
-</blockquote>
-
-<h1 id="六·数组"><a href="#六·数组" class="headerlink" title="六·数组"></a>六·数组</h1><h2 id="一维数组"><a href="#一维数组" class="headerlink" title="一维数组"></a>一维数组</h2><blockquote><p>一、定义<br>     类型名    数组名   [整型数 或 整型表达式]<br>二、作用<br>     一次性定义多个相同类型的变量<br>     a[n]下标起始地址为0~n-1，<br>    C语言不检查数组越界<br>     数组空间时括号里面整数的个数+数组元素类型所占空间<br>三、数组初始化<br>     int array[3] = {1,2,3};<br>     int array[] = {1,2,3};<br>     int array[10] = {1,2,3,4};//系统自动给未赋值的元素赋0<br>     int array[3];<br>    array[0] = 1;array[1] = 2;array[2] = 3;</p>
-</blockquote>
-
-<h2 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a>二维数组</h2><blockquote><p>一、定义<br>int a[3][3];<br>二、初始化<br>int a[3][3] = {{1,2,3},{4,5,8},{6,7,9}};<br>int a[3][3] = {1,2,3,4,5,6,7,8,9};//行优先存储<br>int a[3][3] = {{1},{4,5},{8}};//行部分存储<br>int a[3][3] = {1,2,3,4,5};//按存储顺序赋值<br>int a[][3] = {{1},{4,5},{7,8,9}};//二维数组必须指定列值，行值可以省略</p>
-</blockquote>
-
-<h2 id="字符数组"><a href="#字符数组" class="headerlink" title="字符数组"></a>字符数组</h2><blockquote><p>一、定义<br>    char a[10];<br>二、初始化<br>    char str[5] = {‘g’,’o’,’’o’,’d’,’\n’};<br>    char str[] = {‘g’,’o’,’’o’,’d’,’\n’};<br>    char str[] = {“good”};//字符串结束标识’\0’也要存到数组中    char str[] = “good”;<br>数组名a其实是数组起始地址 = &amp;a[0];<br>输出字符数组：%s简化输出（遇到字符串结束标识就停止）</p>
-<p>三、常用函数：<br>gets(a)  给数组a输入一串字符<br>puts(a) 把数组a输出<br>strcat(a,b)  把b连接到a中<br>strcpy(a,b)   把b拷贝到a中<br>strlen(a)   测试字符串的长度  不包括’\0’<br>strcmp(a,b)    =0 字符相同；=1  a&gt;b；    =-1  a&lt;b     </p>
-</blockquote>
-
-<h2 id="指针数组"><a href="#指针数组" class="headerlink" title="指针数组"></a>指针数组</h2><blockquote><p>int *p1[5]；</p>
-</blockquote>
-
-<h2 id="数组指针"><a href="#数组指针" class="headerlink" title="数组指针"></a>数组指针</h2><blockquote><p>int (*p2)[5]；</p>
-</blockquote>
-
-<h1 id="七·函数"><a href="#七·函数" class="headerlink" title="七·函数"></a>七·函数</h1><h2 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h2><blockquote><p>返回值类型    函数名   (参数表)<br>{<br>     函数体;<br>}</p>
-</blockquote>
-
-<h2 id="有参函数"><a href="#有参函数" class="headerlink" title="有参函数"></a>有参函数</h2><blockquote><p>int   f(int a,int b)<br>{<br>    …….;<br>   return 0;<br>}</p>
-</blockquote>
-
-<h2 id="无参函数"><a href="#无参函数" class="headerlink" title="无参函数"></a>无参函数</h2><blockquote><p>void   f()<br>{<br>   …….<br>}</p>
-<p>函数如果没有返回值   默认是整数int</p>
-</blockquote>
-
-<h2 id="参数传递的两种形式"><a href="#参数传递的两种形式" class="headerlink" title="参数传递的两种形式"></a>参数传递的两种形式</h2><h3 id="1、值传递"><a href="#1、值传递" class="headerlink" title="1、值传递"></a>1、值传递</h3><blockquote><p>规则：<br>实参向形参传递    调用是为形参创建空间   调用结束空间收回</p>
-</blockquote>
-
-<h3 id="2、地址传递"><a href="#2、地址传递" class="headerlink" title="2、地址传递"></a>2、地址传递</h3><blockquote><p>void   f(int *a,int *b)</p>
-</blockquote>
-
-<h2 id="函数说明"><a href="#函数说明" class="headerlink" title="函数说明"></a>函数说明</h2><blockquote><p>如果被调用函数在主调用函数之前不需说明<br>如果被调用函数返回值是 int   char  也不需要说明<br>如果返回值是其他类型需在在主程序初始阶段对被调用函数进行说明</p>
-</blockquote>
-
-<h2 id="函数嵌套调用"><a href="#函数嵌套调用" class="headerlink" title="函数嵌套调用"></a>函数嵌套调用</h2><blockquote><p>递归调用：函数自己调用自己的过程就叫做递归调用</p>
-</blockquote>
-
-<h2 id="变量的作用域和生命周期"><a href="#变量的作用域和生命周期" class="headerlink" title="变量的作用域和生命周期"></a>变量的作用域和生命周期</h2><h3 id="全局变量"><a href="#全局变量" class="headerlink" title="全局变量"></a>全局变量</h3><blockquote><p>函数外部定义的变量：全局变量     （生命周期：一直都在）</p>
-</blockquote>
-
-<h3 id="局部变量"><a href="#局部变量" class="headerlink" title="局部变量"></a>局部变量</h3><blockquote><p>函数内部或者复合语句内部定义的变量    （生命周期：直到函数结束）</p>
-</blockquote>
-
-<h1 id="八·指针"><a href="#八·指针" class="headerlink" title="八·指针"></a>八·指针</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><blockquote><p>int   *p = &i;</p>
-<p>int*  p;<br>int    *p;<br>int *p,q;//p是指针，而q是普通变量<br>int *p,*q;//都是指针</p>
-</blockquote>
-
-<h2 id="指针变量"><a href="#指针变量" class="headerlink" title="指针变量"></a>指针变量</h2><blockquote><p>变量的值是内存的地址<br>普通变量的值是实际的值<br>指针变量的值是具有实际值的变量的地址</p>
-</blockquote>
-
-<h2 id="参数指针"><a href="#参数指针" class="headerlink" title="参数指针"></a>参数指针</h2><blockquote><p>void  f(int *p);<br>在被调用的时候得到了某个变量的地址<br>int i = 0;f(&amp;i);<br>在函数里面可以通过这个指针访问外面的这个i</p>
-</blockquote>
-
-<h2 id="访问地址上的变量"><a href="#访问地址上的变量" class="headerlink" title="访问地址上的变量*"></a>访问地址上的变量*</h2><blockquote><p>*是一个单目运算符，用来访问指针的值所表示的地址上的变量</p>
-<p>可以做右值也可以做左值</p>
-<p>int  k = *p;</p>
-<p>*p = k+1;</p>
-</blockquote>
-
-<h2 id="指针与数组"><a href="#指针与数组" class="headerlink" title="指针与数组"></a>指针与数组</h2><blockquote><p>函数参数表中的数组其实就是指针</p>
-<p>可以使用数组的运算符[]进行运算<br>void text(int *p)<br>{<br>        ……<br>       p[0] = 10;<br>}</p>
-<p>实际上，一下四种函数原型是等价的：<br>‘int sum(int *ar,int n);<br>int sum(int *,int);<br>int sum(int ar[],int n);<br>int sum(int [],int);</p>
-<p>数组变量是特殊的指针<br>数组变量本身表达地址，所以  int a[10];int *p = a;//无需用&amp;取地址<br>但是数组的单元表达的是变量，需要用&amp;取地址   int *p = &amp;a[0];</p>
-<p>数组变量是const的指针，所以不能被赋值（不能等于另外一个数组）</p>
-</blockquote>
-
-<h2 id="指针与const"><a href="#指针与const" class="headerlink" title="指针与const"></a>指针与const</h2><blockquote><p>指针——可以是const<br>值——可以是const</p>
-<p>指针为const时：<br>表示一旦得到了某个变量的地址，不能再指向其他变量<br>int *const q = &i;<br>*q = 26;//OK<br>q++;//ERROR</p>
-<p>所指是const：<br>表示不能通过这个指针去修改那个变量（并不能使得那个变量成为const）<br>const int *p = &i;<br><em>p = 26;//ERROR  （</em>p）是const<br>i = 26;/OK<br>p = &j;//OK</p>
-</blockquote>
-
-<h2 id="指针运算"><a href="#指针运算" class="headerlink" title="指针运算"></a>指针运算</h2><blockquote><p>给一个指针+1表示要让指针指向下一个变量（-1相反，也可以是其他的数   或  递增/递减）</p>
-<p>如果指针不是指向一片连续分配的空间。如数组，则这种运算是没有意义的</p>
-<p>*p++<br>    取出p所指的那个数据来，完事之后顺便把p移动到下一个位置去<br>    *的优先级虽然高，但是没有++高<br>    常用于数组类的连续空间操作</p>
-</blockquote>
-
-<h1 id="九·结构类型"><a href="#九·结构类型" class="headerlink" title="九·结构类型"></a>九·结构类型</h1><h2 id="1、枚举"><a href="#1、枚举" class="headerlink" title="1、枚举"></a>1、枚举</h2><blockquote><p>枚举是一种用户定义的数据类型<br>语法：<br>enum 枚举名{变量名,变量名….};//枚举名可忽略   变量名后可赋值</p>
-<p>void f(enum 枚举名 名字)</p>
-<p>例：void f(enum color c)</p>
-</blockquote>
-
-<h2 id="2、结构"><a href="#2、结构" class="headerlink" title="2、结构"></a>2、结构</h2><blockquote><p>struct 结构名{<br>   类型   变量名;<br>    ….<br>}结构变量;</p>
-<p>struct date{<br>   int month;<br>   int day;<br>   int year;<br>};</p>
-<p>int main(){<br>   struct date today = {07,31,2014};<br>   struct date thismonth = {.month = 7,.year = 2014};<br>   return 0;<br>}</p>
-<p>要访问整个结构，直接用结构变量的名字</p>
-<p>对于整个结构，可以做赋值、取地址，也可以传递给函数参数</p>
-<p>pl = (struct point){5,10};//相当于p1.x= 5;pl.y = 10</p>
-<p>p1 = p2;//相当于p1.x = p2.x;p1.y = p2.y;</p>
-<p>结构指针<br>和数组不同，结构变量的名字并不是结构变量的地址，必须使用&amp;运算符<br>struct date *pDate = &today;</p>
-<p>(*p).monh = 12   等价于   p-&gt;month = 12</p>
-<p>结构数组：<br>struct date dates[100];<br>struct date dates[] = {<br>{4,5,2005},{2,4,2005}<br>};</p>
-<p>结构中的结构：<br>struct dateAndTime{<br>   struct date sdate;<br>   struct time stime;<br>};</p>
-</blockquote>
-
-<h2 id="3、联合"><a href="#3、联合" class="headerlink" title="3、联合"></a>3、联合</h2><blockquote><p>自定义数据类型：typedef<br>tyoedef int Length;</p>
-<p>Length a,b,len;<br>Length numbers[10];</p>
-<p>联合：<br>union 变量名{<br>   类型 变量;<br>    。。。。<br>} 联合变量名;</p>
-<p>union AnElt{<br>   int i;<br>   char c;//联合里的变量占一份空间<br>} elt1,elt2;</p>
-<p>选择成员是i还是c</p>
-</blockquote>
-
-
+                <p>Python由荷兰数学和计算机科学研究学会的Guido van Rossum 于1990 年代初设计，作为一门叫做ABC语言的替代品。 [1]  Python提供了高效的高级数据结构，还能简单有效地面向对象编程。Python语法和动态类型，以及解释型语言的本质，使它成为多数平台上写脚本和快速开发应用的编程语言， [2]  随着版本的不断更新和语言新功能的添加，逐渐被用于独立的、大型项目的开发。<br><img src="https://cdn.jsdelivr.net/gh/JianYu-code/image/python.jpg@518w.webp"><br>                                    —————————图片来自B站：鱼C-小师妹</p>
 
                 
             </div>
@@ -726,7 +474,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://JianYu-code.github.io/2021/05/04/c-yu-yan/">http://JianYu-code.github.io/2021/05/04/c-yu-yan/</a>
+                    <a href="http://JianYu-code.github.io/2021/05/05/python/">http://JianYu-code.github.io/2021/05/05/python/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -768,8 +516,8 @@
                                     <span class="chip bg-color">笔记</span>
                                 </a>
                             
-                                <a href="/tags/C%E8%AF%AD%E8%A8%80/">
-                                    <span class="chip bg-color">C语言</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -963,9 +711,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/05/05/python/">
                     <div class="card-image">
@@ -982,9 +731,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-05-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -997,6 +746,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1019,12 +769,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/27/shu-ju-jie-gou/">
+                <a href="/2021/05/04/c-yu-yan/">
                     <div class="card-image">
                         
-                        <img src="https://cdn.jsdelivr.net/gh/JianYu-code/image/数据结构.jpg" class="responsive-img" alt="数据结构">
+                        <img src="https://cdn.jsdelivr.net/gh/JianYu-code/image/C语言2.jpg" class="responsive-img" alt="C语言">
                         
-                        <span class="card-title">数据结构</span>
+                        <span class="card-title">C语言</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1035,7 +785,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-04
                             </span>
                         <span class="publish-author">
                             
@@ -1052,12 +802,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
-                        <span class="chip bg-color">数据结构</span>
-                    </a>
-                    
                     <a href="/tags/%E7%AC%94%E8%AE%B0/">
                         <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">C语言</span>
                     </a>
                     
                 </div>
