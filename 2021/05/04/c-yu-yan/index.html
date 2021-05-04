@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="青青草原, My Blog">
+    <meta name="keywords" content="C语言, My Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>青青草原 | My Blog</title>
+    <title>C语言 | My Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -245,15 +245,28 @@
 </header>
 
     
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/JianYu-code/image/C语言.jpg@518w.webp')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">青青草原</h1>
+                    <h1 class="description center-align post-title">C语言</h1>
                 </div>
             </div>
         </div>
@@ -369,18 +382,27 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%AF%97%E6%AD%8C/">
-                                <span class="chip bg-color">诗歌</span>
+                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">笔记</span>
                             </a>
                         
-                            <a href="/tags/%E6%96%87%E6%A1%88/">
-                                <span class="chip bg-color">文案</span>
+                            <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                                <span class="chip bg-color">C语言</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                笔记
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -389,16 +411,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-28
+                    2021-05-04
                 </div>
                 
 
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-05-05
+                </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    94
+                    1.7k
                 </div>
                 
 
@@ -420,12 +447,62 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="青青草原"><a href="#青青草原" class="headerlink" title="青青草原"></a>青青草原</h2><blockquote><p>它穿着短袖出了门，<br>外面寒风刺骨，</p>
-<p>他说，<br>杀不死的人，<br>杀不死的灵魂，<br>去他妈的精神不死，<br>狼死死的盯着这块肉，<br>什么羊都想当肉卷。</p>
-<p>老羊把鲜嫩的肉卖给老狼，<br>换来鲜嫩的草，<br>羊仔瘦骨嶙峋，<br>嘴里高喊着精神至上，<br>灵魂不屈。</p>
-<footer><strong>——————江洋</strong></footer></blockquote>
+                <p>C语言是一门面向过程的、抽象化的通用程序设计语言，广泛应用于底层开发。C语言能以简易的方式编译、处理低级存储器。C语言是仅产生少量的机器语言以及不需要任何运行环境支持便能运行的高效率程序设计语言。尽管C语言提供了许多低级处理的功能，但仍然保持着跨平台的特性，以一个标准规格写出的C语言程序可在包括类似嵌入式处理器以及超级计算机等作业平台的许多计算机平台上进行编译。</p>
+<h1 id="一·程序设计和C语言"><a href="#一·程序设计和C语言" class="headerlink" title="一·程序设计和C语言"></a>一·程序设计和C语言</h1><h2 id="1-1、什么是计算机程序"><a href="#1-1、什么是计算机程序" class="headerlink" title="1.1、什么是计算机程序"></a>1.1、什么是计算机程序</h2><h3 id="计算机"><a href="#计算机" class="headerlink" title="计算机"></a>计算机</h3><blockquote><p>1、计算机的每一个操作都是根据人们事先指定的指令进行的</p>
+<p>2、图灵——理论计算机（图灵机）设计者  程序运行——二进制</p>
+<p>3、冯·诺依曼——计算机奠基人   五大组成部分（CPU（运算器&amp;控制器）、输入输出设备、存储设备）</p>
+</blockquote>
 
+<h3 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h3><blockquote><p>1、一组计算机能识别和执行的指令。一个特定的指令序列用来完成一定的功能</p>
+<p>2、一个软件包含了很多程序（一个特定的功能称为程序）</p>
+</blockquote>
 
+<blockquote><p>总之，计算机的一切都是由程序来控制，离开程序，计算机将一事无成</p>
+</blockquote>
+
+<h2 id="1-2、什么是计算机语言"><a href="#1-2、什么是计算机语言" class="headerlink" title="1.2、什么是计算机语言"></a>1.2、什么是计算机语言</h2><blockquote><p><strong>1、早期——机器语言（二进制写的）</strong><br>    进制转换<br>短除法<br>十进制-&gt;其他进制</p>
+<p>例：十进制：38 得二进制：？ </p>
+<p>用38每次都除以2，并记录余数，除到最后将余数从新至旧摆列，得：100110</p>
+<p>其他进制-&gt;十进制</p>
+<p>例：1011 = 1x2的3次方+0x2的2次方+1x2的1次方+1x2的0次方，得十进制：11</p>
+<p>二进制-&gt;八进制(八进制-&gt;二进制)<br>三合一法<br>例：11010111<br>将这个数，从右至左，每取三位组成一位，被新组成的一位按照二进制计算，然后将得到的结果从新至旧摆列，11,010,111(3,2,7)得：八进制：327</p>
+<p>反之，就是将八进制的每一位分解成二进制数(三位，不够用0占)，然后从新至旧摆列3,2,7(011,010,111)，得二进制：11010111（可以将第一位的0省略）</p>
+<p>二进制-&gt;十六进制（十六进制-&gt;二进制）<br>四合一法<br>例：100111001，从左至右取四位为新一位，0001,0011,1001(1,3,9),然后将得到的几个结果从新至旧摆列，得十六进制：139</p>
+<p>反之 就是取一合四，1,3,9(0001,0011,1001)，从新至旧摆列，得二进制：100111001</p>
+<p>进制取值范围：<br>二进制：0<del>1<br>十进制：0</del>9<br>八进制：0<del>7<br>十六进制：0</del>9 &amp; A~F</p>
+<p>ASCII编码：<br>掌握a(097)<del>z(122) &amp; A(065)</del>Z(090)<br>大小写转换：大-&gt;小：A+‘32’<br>小-&gt;大：a-‘32’</p>
+<p><strong>2、早期——机器语言（二进制写的）</strong><br>    进制转换<br>短除法<br>十进制-&gt;其他进制</p>
+<p>例：十进制：38 得二进制：？ </p>
+<p>用38每次都除以2，并记录余数，除到最后将余数从新至旧摆列，得：100110</p>
+<p>其他进制-&gt;十进制</p>
+<p>例：1011 = 1x2的3次方+0x2的2次方+1x2的1次方+1x2的0次方，得十进制：11</p>
+<p>二进制-&gt;八进制(八进制-&gt;二进制)<br>三合一法<br>例：11010111<br>将这个数，从右至左，每取三位组成一位，被新组成的一位按照二进制计算，然后将得到的结果从新至旧摆列，11,010,111(3,2,7)得：八进制：327</p>
+<p>反之，就是将八进制的每一位分解成二进制数(三位，不够用0占)，然后从新至旧摆列3,2,7(011,010,111)，得二进制：11010111（可以将第一位的0省略）</p>
+<p>二进制-&gt;十六进制（十六进制-&gt;二进制）<br>四合一法<br>例：100111001，从左至右取四位为新一位，0001,0011,1001(1,3,9),然后将得到的几个结果从新至旧摆列，得十六进制：139</p>
+<p>反之 就是取一合四，1,3,9(0001,0011,1001)，从新至旧摆列，得二进制：100111001</p>
+<p>进制取值范围：<br>二进制：0<del>1<br>十进制：0</del>9<br>八进制：0<del>7<br>十六进制：0</del>9 &amp; A~F</p>
+<p>ASCII编码：<br>掌握a(097)<del>z(122) &amp; A(065)</del>Z(090)<br>大小写转换：大-&gt;小：A+‘32’<br>小-&gt;大：a-‘32’</p>
+<p><strong>3、中期——汇编语言（助记符代替某些指令，属于低级语言）</strong></p>
+<p><strong>4、后期——高级语言（接近自然语言&amp;数学语言）</strong><br>    高级语言出现了两个阶段：<br>1、结构化程序高级语言：C语言<br> 早期，适用于较小的程序设计<br>2、面向对象高级程序设计语言：C++、java…..<br> 后期，适用于大型化、系统化的程序开发</p>
+<p>计算机也不是能直接识别高级语言的，需要“翻译”，用一种称为“编译程序”的软件把用高级语言编写的程序（源程序）（文件名.c）转换为机器指令的程序（目标程序）（二进制代码），然后计算机执行机器指令程序，最后得到结果。</p>
+<p>“翻译”有两种：<br>1、解释<br> java:使用虚拟机进行解释，相对运行效率低<br>2、编译<br> C、C++语言是编译性语言，相对运行效率高</p>
+</blockquote>
+
+<h2 id="1-3、C语言的发展及特点"><a href="#1-3、C语言的发展及特点" class="headerlink" title="1.3、C语言的发展及特点"></a>1.3、C语言的发展及特点</h2><blockquote><p>1、Unix-&gt;C，Unix是ios和安卓的母本</p>
+<p>2、C语言标准：C89/C99</p>
+<p>3、C语言特点<br> ①、简洁紧凑 ，方便灵活<br> C语言一共有37个关键字，9种控制语句，程序的书写自由，主要用小写字母表示<br> C语言不直接提供输入输出语句，有关的操作语句是由库函数来实现</p>
+<p>②、运算符丰富<br>    共有34种运算符</p>
+<p>③、数据类型丰富<br> C语言提供的数据类型包括 整型、浮点型、字符型、数组类型、指针类型、结构体类型和共用体类型等；C99又扩充了复数浮点型、超长整型（long long）和布尔类型（bool）等。</p>
+<p>④、结构化控制语句<br> if … else、for、while、do….while、switch<br> C语言用函数作为程序的模块单位（C语言的基本组成单位是函数）<br> C语言是完全模块化和结构化的语言（函数=模块，模块=函数）</p>
+<p>⑤、程序设计自由度大</p>
+<p>⑥、直接访问硬件进行位操作<br> C语言既具有高级语言的功能，又具有低级语言的许多功能，可用来编写系统软件</p>
+<p>⑦、可移植性较好（相对来说）</p>
+<p>⑧、代码质量高，执行效率高</p>
+</blockquote>
+
+<h2 id="1-4-1、掌握C语言的结构"><a href="#1-4-1、掌握C语言的结构" class="headerlink" title="1.4.1、掌握C语言的结构"></a>1.4.1、掌握C语言的结构</h2><blockquote><p><strong>main必须且唯一</strong></p>
+<p><strong>结构</strong><br>①、预处理 include “stdio.h”<br>②、main()<br>③、{  //开始<br>④、语句   ;  分号作为语句结束的标志<br>⑤、}  //结束</p>
+</blockquote>
                 
             </div>
             <hr/>
@@ -451,7 +528,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://JianYu-code.github.io/2021/04/28/qing-qing-cao-yuan/">http://JianYu-code.github.io/2021/04/28/qing-qing-cao-yuan/</a>
+                    <a href="http://JianYu-code.github.io/2021/05/04/c-yu-yan/">http://JianYu-code.github.io/2021/05/04/c-yu-yan/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -489,12 +566,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%AF%97%E6%AD%8C/">
-                                    <span class="chip bg-color">诗歌</span>
+                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">笔记</span>
                                 </a>
                             
-                                <a href="/tags/%E6%96%87%E6%A1%88/">
-                                    <span class="chip bg-color">文案</span>
+                                <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                                    <span class="chip bg-color">C语言</span>
                                 </a>
                             
                         </div>
@@ -693,13 +770,12 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2021/04/28/qing-qing-cao-yuan/">
+                <a href="/2021/05/04/c-yu-yan/">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/JianYu-code/image/C语言.jpg@518w.webp" class="responsive-img" alt="C语言">
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="青青草原">
-                        
-                        <span class="card-title">青青草原</span>
+                        <span class="card-title">C语言</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -710,12 +786,16 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            JianYu
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -724,12 +804,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AF%97%E6%AD%8C/">
-                        <span class="chip bg-color">诗歌</span>
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
-                    <a href="/tags/%E6%96%87%E6%A1%88/">
-                        <span class="chip bg-color">文案</span>
+                    <a href="/tags/C%E8%AF%AD%E8%A8%80/">
+                        <span class="chip bg-color">C语言</span>
                     </a>
                     
                 </div>
@@ -743,13 +823,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/04/27/wo-jiu-na-yang-zhan-zhao-ru-shui/">
+                <a href="/2021/04/27/shu-ju-jie-gou/">
                     <div class="card-image">
                         
+                        <img src="https://cdn.jsdelivr.net/gh/JianYu-code/image/数据结构.jpg" class="responsive-img" alt="数据结构">
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="我就那样站着入睡">
-                        
-                        <span class="card-title">我就那样站着入睡</span>
+                        <span class="card-title">数据结构</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -764,8 +843,12 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            JianYu
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -773,12 +856,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AF%97%E6%AD%8C/">
-                        <span class="chip bg-color">诗歌</span>
+                    <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                        <span class="chip bg-color">数据结构</span>
                     </a>
                     
-                    <a href="/tags/%E6%96%87%E6%A1%88/">
-                        <span class="chip bg-color">文案</span>
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
